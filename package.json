@@ -1,0 +1,10 @@
+{
+  "name": "webMaster",
+  "version": "1.0.0",
+  "description": "O webMaster é um pacote npm onde você pode usar em seus projetos para gerenciar informações no localStorage e com cookies",
+  "main": "index.js",
+  "repository": "https://github.com/webldavi/webMaster",
+  "author": "Luis Davi",
+  "license": "MIT",
+  "private": false
+}
