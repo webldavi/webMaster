@@ -47,20 +47,20 @@ após a importação você deve instanciar a classe e passar os parametros neces
         import { localMaster } from "webmaster"
 
         function App() {
-        const myStore = new localMaster("key")
-        console.log(myStore) // > localMaster {}
-
-        myStore.createData({name: "FOO"})
-        myStore.save()
-        console.log(myStore) // localMaster { data: {name: "FOO"}}
-        console.log(localStorage.getItem("key")) // '{name: "FOO"}'
-
-        myStore.updateData({...myStore.getData(), age: 19})
-        myStore.save()
-        console.log(myStore) // localMaster { data: {name: "BAR", age: 19}}
-        console.log(localStorage.getItem("key")) // '{name: "BAR", age: 19}'
-
-        return <h1>{myStore.getData().name}</h1> // <h1>BAR</h1>
+            const myStore = new localMaster("key")
+            console.log(myStore) // > localMaster {}
+    
+            myStore.createData({name: "FOO"})
+            myStore.save()
+            console.log(myStore) // localMaster { data: {name: "FOO"}}
+            console.log(localStorage.getItem("key")) // '{name: "FOO"}'
+    
+            myStore.updateData({...myStore.getData(), age: 19})
+            myStore.save()
+            console.log(myStore) // localMaster { data: {name: "BAR", age: 19}}
+            console.log(localStorage.getItem("key")) // '{name: "BAR", age: 19}'
+    
+            return <h1>{myStore.getData().name}</h1> // <h1>BAR</h1>
         }
 
         export default App
